@@ -1,19 +1,43 @@
-# Lab Title 
+# osTicket Ticket Management Lab 
 
 ## Overview
-This project documents the setup and configuration of a [Lab Name] environment using [Software/OS].
+This repository documents a hands-on lab focused on creating, managing, and resolving tickets in an osTicket helpdesk environment. The lab explores ticket properties, escalations, department restructuring, and real-world ticketing workflows.
 
 ## Components
-- [Primary System] (e.g., Windows Server, Linux, etc.)
-- [Client System] (e.g., Windows 10 VM, Linux VM, etc.)
-- [Hypervisor] (e.g., VirtualBox, VMware, Hyper-V)
+- Primary System: Windows 10 (Azure Virtual Machine)
+- osTicket Version: 1.15.8
+- Database: MySQL 5.5.62
 
 ## Steps Taken
-1. Installed [OS/Software] and configured [Feature].
-2. Created a [Domain/Network/Environment] (e.g., lab.local).
-3. Added a [Client System] and connected it to [Domain/Network].
-4. Configured [Users/Roles/Permissions/Services] as needed.
-5. Verified the setup using [Tools Used] (e.g., PowerShell, ADUC, CLI commands).
+1. Accessing osTicket
+   - Admin/Analyst Login Page: http://localhost/osTicket/scp/login.php
+   - End Users osTicket URL: http://localhost/osTicket
+2. Restructuring Departments
+    - Converted SysAdmins into a Top-Level Department
+    - Deleted (not archived) Maintenance Department
+3. Creating and Managing Tickets
+   1. Ticket 1: Banking System Outage
+    - Created by End-User: "Entire mobile/online banking system is down"
+    - Observed by Help Desk Agent (John):
+      - Priority
+      - Department
+      - SLA
+      - Assigned To
+    - Properties Set:
+      - SLA: Sev-A (1 hour, 24/7)
+      - Department: Online Banking
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Verification Screenshots
 ![Users and Computers](https://github.com/deemthedream99/Active-Directory-VirtualBox-Lab/blob/main/Users%20and%20Computers.png?raw=true) 
